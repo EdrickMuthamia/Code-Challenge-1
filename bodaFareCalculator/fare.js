@@ -1,3 +1,5 @@
+const readline = require('readline');
+
 function calculateBodaFare(distanceInKm) {
     const baseFare = 50;
     const chargePerKm = 15;
@@ -19,6 +21,12 @@ function calculateBodaFare(distanceInKm) {
     console.log("Panda Pikipiki!");
 }
 
-// Prompt the user and call the function
-const distanceInKm = prompt("Unafika wapi Mkubwa? Kilometer ngapi?:");
-calculateBodaFare(distanceInKm);
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.question("Unafika wapi Mkubwa? Kilometer ngapi?: ", (answer) => {
+    calculateBodaFare(answer);
+    rl.close();
+});
