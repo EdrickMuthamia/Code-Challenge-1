@@ -5,12 +5,6 @@ function calculateBodaFare(distanceInKm) {
     const chargePerKm = 15;
     const distance = Number(distanceInKm);
 
-    // Validate input
-    if (isNaN(distance) || distance <= 0) {
-        console.log("Tafadhali ingiza nambari sahihi ya kilomita.");
-        return;
-    }
-
     const fareForDistance = distance * chargePerKm;
     const totalFare = baseFare + fareForDistance;
 
