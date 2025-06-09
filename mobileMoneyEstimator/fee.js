@@ -3,12 +3,6 @@ const readline = require('readline');
 function estimateTransactionFee(amountToSend) {
     const amount = Number(amountToSend);
 
-    // Validate input
-    if (isNaN(amount) || amount <= 0) {
-        console.log("Tafadhali ingiza kiasi sahihi.");
-        return;
-    }
-
     // Calculate fee (1.5% of amount)
     let fee = amount * 0.015;
 
@@ -21,6 +15,9 @@ function estimateTransactionFee(amountToSend) {
 
     const totalDebited = amount + fee;
 
+    console.log(`Sending KES ${amount}:`);
+    console.log(`Calculated Transaction Fee: KES ${fee}`);
+    console.log(`Total amount to be debited: KES ${totalDebited}\n`);
     console.log("Send Money Securely!");
 }
 
