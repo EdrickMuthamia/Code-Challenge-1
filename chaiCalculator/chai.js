@@ -3,11 +3,6 @@ const readline = require('readline');
 function calculateChaiIngredients(numberOfCups) {
     const cups = Number(numberOfCups);
 
-    // Validate the input
-    if (isNaN(cups) || cups <= 0) {
-        console.log("Please enter a valid number.");
-        return;
-    }
 
     // Calculate the ingredients
     const water = 200 * cups;
