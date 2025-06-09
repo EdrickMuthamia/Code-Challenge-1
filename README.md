@@ -14,6 +14,6 @@ Simple JavaScript programs for everyday Kenyan calculations.
 2. Enter your input when prompted.
 3. See the results in the console.
 
----
+
 
 Licensed under the [MIT License](LICENSE).
