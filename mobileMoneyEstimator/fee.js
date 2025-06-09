@@ -1,3 +1,5 @@
+const readline = require('readline');
+
 function estimateTransactionFee(amountToSend) {
     const amount = Number(amountToSend);
 
@@ -25,6 +27,12 @@ function estimateTransactionFee(amountToSend) {
     console.log("Send Money Securely!");
 }
 
-// Prompt the user and call the function
-const amountToSend = prompt("Unatuma Ngapi? (KES):");
-estimateTransactionFee(amountToSend);
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.question("Unatuma Ngapi? (KES): ", (answer) => {
+    estimateTransactionFee(answer);
+    rl.close();
+});
