@@ -1,4 +1,6 @@
-function calculateChaiIngredients() {
+const readline = require('readline');
+
+function calculateChaiIngredients(numberOfCups) {
     const cups = Number(numberOfCups);
 
     // Validate the input
@@ -22,5 +24,12 @@ function calculateChaiIngredients() {
     console.log("Enjoy your Chai Bora!");
 }
 
-const numberOfCups = prompt("Karibu! How many cups of Chai Bora would you like to make?");
-calculateChaiIngredients();
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.question("Karibu! How many cups of Chai Bora would you like to make? ", (answer) => {
+    calculateChaiIngredients(answer);
+    rl.close();
+});
