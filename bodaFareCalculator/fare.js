@@ -8,11 +8,11 @@ function calculateBodaFare(distanceInKm) {
     const fareForDistance = distance * chargePerKm;
     const totalFare = baseFare + fareForDistance;
 
-    console.log(`Uko kwote? Io ni ${distance} km:`);
-    console.log(`Ukikalia Pikipiki: KES ${baseFare}`);
-    console.log(`Mpaka Uko: KES ${fareForDistance}`);
-    console.log(`Total: KES ${totalFare}\n`);
-    console.log("Panda Pikipiki!");
+    console.log(`Uko kwote? Io ni ${distance} km:;
+    Ukikalia Pikipiki: KES ${baseFare};
+    Mpaka Uko: KES ${fareForDistance};
+    Total: KES ${totalFare}\n;
+    Panda Pikipiki!`);
 }
 
 const rl = readline.createInterface({
