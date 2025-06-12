@@ -2,18 +2,19 @@
 
 Simple JavaScript programs for everyday Kenyan calculations.
 
-## Projects
+## Description
+This project contains three mini-apps:
+- Chai Calculator
+- Boda Fare Calculator
+- Transaction Fee Estimator
 
-- **Chai Calculator:** Calculates ingredients for Kenyan chai.  
-- **Boda Fare Calculator:** Estimates boda boda fare by distance.  
-- **Transaction Fee Estimator:** Calculates mobile money transaction fees.
+## Project Setup
+1. Clone the repository.
+2. Open the HTML file for each calculator in your browser.
+3. Follow the prompts and view results in the browser console or alert.
 
-## How to Run
+## Author
+Edrick Muthamia
 
-1. Open a project file in your browser console or include it in an HTML file.
-2. Enter your input when prompted.
-3. See the results in the console.
-
-
-
+## License
 Licensed under the [MIT License](LICENSE).
