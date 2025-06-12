@@ -11,7 +11,7 @@ function calculateBodaFare(distanceInKm) {
     console.log(`Uko kwote? Io ni ${distance} km:;
     Ukikalia Pikipiki: KES ${baseFare};
     Mpaka Uko: KES ${fareForDistance};
-    Total: KES ${totalFare}\n;
+    Total: KES ${totalFare};
     Panda Pikipiki!`);
 }
 
