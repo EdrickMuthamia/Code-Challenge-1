@@ -15,10 +15,11 @@ function estimateTransactionFee(amountToSend) {
 
     const totalDebited = amount + fee;
 
-    console.log(`Sending KES ${amount}:`);
-    console.log(`Calculated Transaction Fee: KES ${fee}`);
-    console.log(`Total amount to be debited: KES ${totalDebited}\n`);
-    console.log("Send Money Securely!");
+    console.log(`Sending KES ${amount}
+    Calculated Transaction Fee: KES ${fee}
+    Total amount to be debited: KES ${totalDebited}
+    
+    Send Money Securely!`);
 }
 
 const rl = readline.createInterface({
